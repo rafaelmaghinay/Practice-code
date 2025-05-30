@@ -1,11 +1,11 @@
 #returns the first non-repeating character in a string
 
-s1="so this is a string"
+s1="So this is a string"
 
 def firstNonRepeatChar():
     myList = []
     
-    for i in s1:
+    for i in s1.lower():
         if i not in myList:
             myList.append(i)
         
@@ -13,8 +13,15 @@ def firstNonRepeatChar():
             myList.remove(i)
             break
         
-    return myList[0]
+    if len(myList) != 0:
+        return myList[0]
+    else:
+        return 0
 
-print(firstNonRepeatChar())
+
+if firstNonRepeatChar() != 0:
+    print(firstNonRepeatChar())
+else:
+    print("Didn't find any non-repeating characters")
     
     
