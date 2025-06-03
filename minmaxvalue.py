@@ -4,7 +4,6 @@ myList = [4, 5, -3, 6 ,1, 10, -15, 25, 15, 3 ]
 
 def maximum():
     max = float('-inf')
-    min = float('inf')
     
     for i in myList:
         if max < i:

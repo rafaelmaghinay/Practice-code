@@ -11,13 +11,13 @@ def isPrime(num):
         
         #finds a factor
         for i in range(2, num):
-            if num % 2 == 0:
+            if num % i == 0:
                 flag = True
                 break
     return flag        
 
 
-num = 10
+num = 7
 notPrime = isPrime(num)
 if notPrime == True:
     print(f"{num} is not a prime number")
